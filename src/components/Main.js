@@ -22,10 +22,9 @@ function Main(props) {
     return (
         <div className="main">
         <Switch>
-            <Route path="/" exact render={showLogin} />
-            <Route path="/login" component={Login} />
+            <Route path="/login" render={showLogin} />
             <Route path="/register" component={Register} />
-            <Route paht="/home" component={Home} />
+            <Route paht="/home" render={{showHome}} />
         </Switch>
     </div>
     );

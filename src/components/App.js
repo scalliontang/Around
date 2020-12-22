@@ -24,7 +24,7 @@ function App() {
   return (
     <div className="App">
       <TopBar isLoggedIn={isLoggedIn} handleLogout={logout} />
-      <Main isLoggedIN={isLoggedIn} handleLoggedIn={loggedIn}/>
+      <Main isLoggedIn={isLoggedIn} handleLoggedIn={loggedIn}/>
     </div>
   );
 }

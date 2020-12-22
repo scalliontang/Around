@@ -6,24 +6,24 @@ import { BASE_URL } from "../constants";
 const formItemLayout = {
     labelCol: {
         xs: { span: 24 },
-        sm: { span: 8 },
+        sm: { span: 8 }
     },
     wrapperCol: {
         xs: { span: 24 },
-        sm: { span: 16 },
-    },
+        sm: { span: 16 }
+    }
 };
 const tailFormItemLayout = {
     wrapperCol: {
         xs: {
             span: 16,
-            offset: 0,
+            offset: 0
         },
         sm: {
             span: 16,
-            offset: 8,
-        },
-    },
+            offset: 8
+        }
+    }
 };
 
 function Register(props) {
@@ -52,7 +52,7 @@ function Register(props) {
             })
             .catch( error => {
                 console.log('register failed: ', error.message);
-                message.success('Registration failed!');
+                message.error('Registration failed!');
             })
     };
 
@@ -118,7 +118,6 @@ function Register(props) {
                     Register
                 </Button>
             </Form.Item>
-            
         </Form>
     );
 }

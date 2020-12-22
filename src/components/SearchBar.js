@@ -17,7 +17,7 @@ function SearchBar(props) {
 
     const handleSearch = (value) => {
         if(searchType !== SEARCH_KEY.all && value ==="") {
-            setError("Please iput your search keyword!");
+            setError("Please input your search keyword!");
             return;
         }
         setError("");
